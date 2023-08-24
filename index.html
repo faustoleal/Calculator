@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <main class="calculadora">
+      <section class="display">
+        <div class="btn" id="btn">
+          <div class="circulo"></div>
+        </div>
+        <div class="pantalla"></div>
+      </section>
+      <button class="operador" onclick="display.borrarTodo()">C</button>
+      <button class="operador" onclick="display.borrar()">&larr;</button>
+      <button class="operador">%</button>
+      <button class="operador" id="operadores" value="dividir">/</button>
+      <button class="numero">7</button>
+      <button class="numero">8</button>
+      <button class="numero">9</button>
+      <button class="operador" id="operadores" value="multiplicar">*</button>
+      <button class="numero">4</button>
+      <button class="numero">5</button>
+      <button class="numero">6</button>
+      <button class="operador" id="operadores" value="restar">-</button>
+      <button class="numero">1</button>
+      <button class="numero">2</button>
+      <button class="numero">3</button>
+      <button class="operador" id="operadores" value="sumar">+</button>
+      <button class="numero">0</button>
+      <button class="numero">.</button>
+      <button class="numero"></button>
+      <button class="operador igual" onclick="display.calcular()">=</button>
+    </main>
+  </div>
+
+  <script src="/js/index.js" defer></script>
+  <script src="/js/Display.js"></script>
+  <script src="/js/darkMode.js" defer></script>
+
+
+</body>
+
+</html>
